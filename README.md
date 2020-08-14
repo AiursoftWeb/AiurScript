@@ -32,18 +32,6 @@ $ aiur Caddy/add_proxy arg1 arg2
 ```bash
 $ my_port=$(aiur Network/get_port)
 ```
-### build
-
-[View file details](./build.sh)
-
-```bash
-$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/build.sh | sudo bash -s your_arguments
-```
-
-```bash
-$ aiur build your_arguments
-```
-
 ### caddy/add_proxy
 
 [View file details](./caddy/add_proxy.sh)
