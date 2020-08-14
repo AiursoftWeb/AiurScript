@@ -13,9 +13,7 @@ echo 'Simpliy run the file: `./build.sh`' >> ./README.md
 echo '' >> ./README.md
 echo '## How to use' >> ./README.md
 echo '' >> ./README.md
-echo 'Executing the following command to trigger the functions in this repo.' >> ./README.md
-echo '' >> ./README.md
-echo 'Or you can use our one-line script import. Put the following line to the start of your script.' >> ./README.md
+echo 'You can install via the one-line install script. Put the following line to the start of your script.' >> ./README.md
 echo '' >> ./README.md
 echo '```bash' >> ./README.md
 echo "$(sed -n 2p ./import_function.sh)" >> ./README.md
@@ -45,7 +43,7 @@ do
     echo "[View file details]($line)" >> ./README.md
     echo '' >> ./README.md
     echo '```bash' >> ./README.md
-    echo "$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/$file | sudo bash -s your_arguments" >> ./README.md
+    #echo "$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/$file | sudo bash -s your_arguments" >> ./README.md
     echo "$ aiur $file_no_sh your_arguments" >> ./README.md
     echo '```' >> ./README.md
     echo '' >> ./README.md
