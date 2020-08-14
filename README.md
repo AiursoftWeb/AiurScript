@@ -103,14 +103,6 @@ $ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/Services/registe
 $ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/SQL_Server/config_password.sh | sudo bash -s www.example.com
 ```
 
-### SQL Server/install
-
-[View file details](./SQL_Server/install.sh)
-
-```bash
-$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/SQL_Server/install.sh | sudo bash -s www.example.com
-```
-
 ### System/set aspnet_prod
 
 [View file details](./System/set_aspnet_prod.sh)
