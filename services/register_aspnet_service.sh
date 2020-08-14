@@ -1,9 +1,9 @@
 register_service()
 {
-    service_name="$1"
-    local_port="$2"
-    run_path="$3"
-    dll="$4"
+    service_name="$1" # my.service
+    local_port="$2" # 12345
+    run_path="$3" # .
+    dll="$4" # FuckingProject.dll
     echo "[Unit]
     Description=$dll Service
     After=network.target
