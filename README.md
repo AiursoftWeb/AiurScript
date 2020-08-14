@@ -38,9 +38,6 @@ $ my_port=$(aiur Network/get_port)
 
 ```bash
 $ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/caddy/add_proxy.sh | sudo bash -s your_arguments
-```
-
-```bash
 $ aiur caddy/add_proxy your_arguments
 ```
 
@@ -50,9 +47,6 @@ $ aiur caddy/add_proxy your_arguments
 
 ```bash
 $ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/firewall/enable_firewall.sh | sudo bash -s your_arguments
-```
-
-```bash
 $ aiur firewall/enable_firewall your_arguments
 ```
 
@@ -62,9 +56,6 @@ $ aiur firewall/enable_firewall your_arguments
 
 ```bash
 $ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/firewall/open_port.sh | sudo bash -s your_arguments
-```
-
-```bash
 $ aiur firewall/open_port your_arguments
 ```
 
@@ -74,9 +65,6 @@ $ aiur firewall/open_port your_arguments
 
 ```bash
 $ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/import_function.sh | sudo bash -s your_arguments
-```
-
-```bash
 $ aiur import_function your_arguments
 ```
 
@@ -86,9 +74,6 @@ $ aiur import_function your_arguments
 
 ```bash
 $ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/mssql/config_password.sh | sudo bash -s your_arguments
-```
-
-```bash
 $ aiur mssql/config_password your_arguments
 ```
 
@@ -98,9 +83,6 @@ $ aiur mssql/config_password your_arguments
 
 ```bash
 $ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/mssql/create_db.sh | sudo bash -s your_arguments
-```
-
-```bash
 $ aiur mssql/create_db your_arguments
 ```
 
@@ -110,9 +92,6 @@ $ aiur mssql/create_db your_arguments
 
 ```bash
 $ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/network/enable_bbr.sh | sudo bash -s your_arguments
-```
-
-```bash
 $ aiur network/enable_bbr your_arguments
 ```
 
@@ -122,9 +101,6 @@ $ aiur network/enable_bbr your_arguments
 
 ```bash
 $ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/network/get_port.sh | sudo bash -s your_arguments
-```
-
-```bash
 $ aiur network/get_port your_arguments
 ```
 
@@ -134,9 +110,6 @@ $ aiur network/get_port your_arguments
 
 ```bash
 $ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/package/caddy.sh | sudo bash -s your_arguments
-```
-
-```bash
 $ aiur package/caddy your_arguments
 ```
 
@@ -146,9 +119,6 @@ $ aiur package/caddy your_arguments
 
 ```bash
 $ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/package/dotnet.sh | sudo bash -s your_arguments
-```
-
-```bash
 $ aiur package/dotnet your_arguments
 ```
 
@@ -158,9 +128,6 @@ $ aiur package/dotnet your_arguments
 
 ```bash
 $ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/package/node.sh | sudo bash -s your_arguments
-```
-
-```bash
 $ aiur package/node your_arguments
 ```
 
@@ -170,9 +137,6 @@ $ aiur package/node your_arguments
 
 ```bash
 $ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/package/sql_server.sh | sudo bash -s your_arguments
-```
-
-```bash
 $ aiur package/sql_server your_arguments
 ```
 
@@ -182,9 +146,6 @@ $ aiur package/sql_server your_arguments
 
 ```bash
 $ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/services/register_service.sh | sudo bash -s your_arguments
-```
-
-```bash
 $ aiur services/register_service your_arguments
 ```
 
@@ -194,9 +155,6 @@ $ aiur services/register_service your_arguments
 
 ```bash
 $ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/system/set_aspnet_prod.sh | sudo bash -s your_arguments
-```
-
-```bash
 $ aiur system/set_aspnet_prod your_arguments
 ```
 
@@ -206,9 +164,6 @@ $ aiur system/set_aspnet_prod your_arguments
 
 ```bash
 $ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/text/edit_json.sh | sudo bash -s your_arguments
-```
-
-```bash
 $ aiur text/edit_json your_arguments
 ```
 
