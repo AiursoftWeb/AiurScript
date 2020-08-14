@@ -9,7 +9,7 @@ echo 'You need to have bash installed. For linux, it is installed by default. Fo
 echo '' >> ./README.md
 echo '## How to build' >> ./README.md
 echo '' >> ./README.md
-echo 'Simpliy run the file: `./build_readme.sh`' >> ./README.md
+echo 'Simpliy run the file: `./build.sh`' >> ./README.md
 echo '' >> ./README.md
 echo '## How to use' >> ./README.md
 echo '' >> ./README.md
@@ -40,7 +40,7 @@ do
     file_no_sh=${file/.sh/}
     file_des=${file_no_sh/_/ }
 
-    echo "### $file_des" >> ./README.md
+    echo "### $file_no_sh" >> ./README.md
     echo '' >> ./README.md
     echo "[View file details]($line)" >> ./README.md
     echo '' >> ./README.md

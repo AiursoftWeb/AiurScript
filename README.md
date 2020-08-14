@@ -9,7 +9,7 @@ You need to have bash installed. For linux, it is installed by default. For Wind
 
 ## How to build
 
-Simpliy run the file: `./build_readme.sh`
+Simpliy run the file: `./build.sh`
 
 ## How to use
 
@@ -32,31 +32,39 @@ $ aiur Caddy/add_proxy arg1 arg2
 ```bash
 $ my_port=$(aiur Network/get_port)
 ```
-### Caddy/add proxy
+### build
 
-[View file details](./Caddy/add_proxy.sh)
-
-```bash
-$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/Caddy/add_proxy.sh | sudo bash -s www.example.com
-```
-
-### Firewall/enable firewall
-
-[View file details](./Firewall/enable_firewall.sh)
+[View file details](./build.sh)
 
 ```bash
-$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/Firewall/enable_firewall.sh | sudo bash -s www.example.com
+$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/build.sh | sudo bash -s www.example.com
 ```
 
-### Firewall/open port
+### caddy/add_proxy
 
-[View file details](./Firewall/open_port.sh)
+[View file details](./caddy/add_proxy.sh)
 
 ```bash
-$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/Firewall/open_port.sh | sudo bash -s www.example.com
+$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/caddy/add_proxy.sh | sudo bash -s www.example.com
 ```
 
-### import function
+### firewall/enable_firewall
+
+[View file details](./firewall/enable_firewall.sh)
+
+```bash
+$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/firewall/enable_firewall.sh | sudo bash -s www.example.com
+```
+
+### firewall/open_port
+
+[View file details](./firewall/open_port.sh)
+
+```bash
+$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/firewall/open_port.sh | sudo bash -s www.example.com
+```
+
+### import_function
 
 [View file details](./import_function.sh)
 
@@ -64,83 +72,91 @@ $ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/Firewall/open_po
 $ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/import_function.sh | sudo bash -s www.example.com
 ```
 
-### Install/caddy
+### mssql/config_password
 
-[View file details](./Install/caddy.sh)
+[View file details](./mssql/config_password.sh)
 
 ```bash
-$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/Install/caddy.sh | sudo bash -s www.example.com
+$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/mssql/config_password.sh | sudo bash -s www.example.com
 ```
 
-### Install/dotnet
+### mssql/create_db
 
-[View file details](./Install/dotnet.sh)
+[View file details](./mssql/create_db.sh)
 
 ```bash
-$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/Install/dotnet.sh | sudo bash -s www.example.com
+$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/mssql/create_db.sh | sudo bash -s www.example.com
 ```
 
-### Install/node
+### network/enable_bbr
 
-[View file details](./Install/node.sh)
+[View file details](./network/enable_bbr.sh)
 
 ```bash
-$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/Install/node.sh | sudo bash -s www.example.com
+$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/network/enable_bbr.sh | sudo bash -s www.example.com
 ```
 
-### Install/sql server
+### network/get_port
 
-[View file details](./Install/sql_server.sh)
+[View file details](./network/get_port.sh)
 
 ```bash
-$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/Install/sql_server.sh | sudo bash -s www.example.com
+$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/network/get_port.sh | sudo bash -s www.example.com
 ```
 
-### Network/enable bbr
+### package/caddy
 
-[View file details](./Network/enable_bbr.sh)
+[View file details](./package/caddy.sh)
 
 ```bash
-$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/Network/enable_bbr.sh | sudo bash -s www.example.com
+$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/package/caddy.sh | sudo bash -s www.example.com
 ```
 
-### Network/get port
+### package/dotnet
 
-[View file details](./Network/get_port.sh)
+[View file details](./package/dotnet.sh)
 
 ```bash
-$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/Network/get_port.sh | sudo bash -s www.example.com
+$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/package/dotnet.sh | sudo bash -s www.example.com
 ```
 
-### Services/register service
+### package/node
 
-[View file details](./Services/register_service.sh)
+[View file details](./package/node.sh)
 
 ```bash
-$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/Services/register_service.sh | sudo bash -s www.example.com
+$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/package/node.sh | sudo bash -s www.example.com
 ```
 
-### SQL Server/config_password
+### package/sql_server
 
-[View file details](./SQL_Server/config_password.sh)
+[View file details](./package/sql_server.sh)
 
 ```bash
-$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/SQL_Server/config_password.sh | sudo bash -s www.example.com
+$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/package/sql_server.sh | sudo bash -s www.example.com
 ```
 
-### System/set aspnet_prod
+### services/register_service
 
-[View file details](./System/set_aspnet_prod.sh)
+[View file details](./services/register_service.sh)
 
 ```bash
-$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/System/set_aspnet_prod.sh | sudo bash -s www.example.com
+$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/services/register_service.sh | sudo bash -s www.example.com
 ```
 
-### Text/edit json
+### system/set_aspnet_prod
 
-[View file details](./Text/edit_json.sh)
+[View file details](./system/set_aspnet_prod.sh)
 
 ```bash
-$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/Text/edit_json.sh | sudo bash -s www.example.com
+$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/system/set_aspnet_prod.sh | sudo bash -s www.example.com
+```
+
+### text/edit_json
+
+[View file details](./text/edit_json.sh)
+
+```bash
+$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/text/edit_json.sh | sudo bash -s www.example.com
 ```
 
