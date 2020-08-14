@@ -22,3 +22,5 @@ register_service()
     systemctl enable $service_name.service
     systemctl start $service_name.service
 }
+
+register_service "$@"

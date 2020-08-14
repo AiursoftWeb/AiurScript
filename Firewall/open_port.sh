@@ -9,3 +9,5 @@ open_port()
     ufw allow $port_to_open/tcp;
     ufw reload;
 }
+
+open_port "$@"

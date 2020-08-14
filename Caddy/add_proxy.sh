@@ -9,3 +9,5 @@ $domain_name {
 }" >> /etc/caddy/Caddyfile
     systemctl restart caddy.service
 }
+
+add_caddy_proxy "$@"
