@@ -37,7 +37,11 @@ $ my_port=$(aiur Network/get_port)
 [View file details](./build.sh)
 
 ```bash
-$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/build.sh | sudo bash -s www.example.com
+$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/build.sh | sudo bash -s your_arguments
+```
+
+```bash
+$ aiur build your_arguments
 ```
 
 ### caddy/add_proxy
@@ -45,7 +49,11 @@ $ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/build.sh | sudo 
 [View file details](./caddy/add_proxy.sh)
 
 ```bash
-$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/caddy/add_proxy.sh | sudo bash -s www.example.com
+$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/caddy/add_proxy.sh | sudo bash -s your_arguments
+```
+
+```bash
+$ aiur caddy/add_proxy your_arguments
 ```
 
 ### firewall/enable_firewall
@@ -53,7 +61,11 @@ $ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/caddy/add_proxy.
 [View file details](./firewall/enable_firewall.sh)
 
 ```bash
-$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/firewall/enable_firewall.sh | sudo bash -s www.example.com
+$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/firewall/enable_firewall.sh | sudo bash -s your_arguments
+```
+
+```bash
+$ aiur firewall/enable_firewall your_arguments
 ```
 
 ### firewall/open_port
@@ -61,7 +73,11 @@ $ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/firewall/enable_
 [View file details](./firewall/open_port.sh)
 
 ```bash
-$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/firewall/open_port.sh | sudo bash -s www.example.com
+$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/firewall/open_port.sh | sudo bash -s your_arguments
+```
+
+```bash
+$ aiur firewall/open_port your_arguments
 ```
 
 ### import_function
@@ -69,7 +85,11 @@ $ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/firewall/open_po
 [View file details](./import_function.sh)
 
 ```bash
-$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/import_function.sh | sudo bash -s www.example.com
+$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/import_function.sh | sudo bash -s your_arguments
+```
+
+```bash
+$ aiur import_function your_arguments
 ```
 
 ### mssql/config_password
@@ -77,7 +97,11 @@ $ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/import_function.
 [View file details](./mssql/config_password.sh)
 
 ```bash
-$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/mssql/config_password.sh | sudo bash -s www.example.com
+$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/mssql/config_password.sh | sudo bash -s your_arguments
+```
+
+```bash
+$ aiur mssql/config_password your_arguments
 ```
 
 ### mssql/create_db
@@ -85,7 +109,11 @@ $ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/mssql/config_pas
 [View file details](./mssql/create_db.sh)
 
 ```bash
-$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/mssql/create_db.sh | sudo bash -s www.example.com
+$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/mssql/create_db.sh | sudo bash -s your_arguments
+```
+
+```bash
+$ aiur mssql/create_db your_arguments
 ```
 
 ### network/enable_bbr
@@ -93,7 +121,11 @@ $ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/mssql/create_db.
 [View file details](./network/enable_bbr.sh)
 
 ```bash
-$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/network/enable_bbr.sh | sudo bash -s www.example.com
+$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/network/enable_bbr.sh | sudo bash -s your_arguments
+```
+
+```bash
+$ aiur network/enable_bbr your_arguments
 ```
 
 ### network/get_port
@@ -101,7 +133,11 @@ $ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/network/enable_b
 [View file details](./network/get_port.sh)
 
 ```bash
-$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/network/get_port.sh | sudo bash -s www.example.com
+$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/network/get_port.sh | sudo bash -s your_arguments
+```
+
+```bash
+$ aiur network/get_port your_arguments
 ```
 
 ### package/caddy
@@ -109,7 +145,11 @@ $ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/network/get_port
 [View file details](./package/caddy.sh)
 
 ```bash
-$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/package/caddy.sh | sudo bash -s www.example.com
+$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/package/caddy.sh | sudo bash -s your_arguments
+```
+
+```bash
+$ aiur package/caddy your_arguments
 ```
 
 ### package/dotnet
@@ -117,7 +157,11 @@ $ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/package/caddy.sh
 [View file details](./package/dotnet.sh)
 
 ```bash
-$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/package/dotnet.sh | sudo bash -s www.example.com
+$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/package/dotnet.sh | sudo bash -s your_arguments
+```
+
+```bash
+$ aiur package/dotnet your_arguments
 ```
 
 ### package/node
@@ -125,7 +169,11 @@ $ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/package/dotnet.s
 [View file details](./package/node.sh)
 
 ```bash
-$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/package/node.sh | sudo bash -s www.example.com
+$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/package/node.sh | sudo bash -s your_arguments
+```
+
+```bash
+$ aiur package/node your_arguments
 ```
 
 ### package/sql_server
@@ -133,7 +181,11 @@ $ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/package/node.sh 
 [View file details](./package/sql_server.sh)
 
 ```bash
-$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/package/sql_server.sh | sudo bash -s www.example.com
+$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/package/sql_server.sh | sudo bash -s your_arguments
+```
+
+```bash
+$ aiur package/sql_server your_arguments
 ```
 
 ### services/register_service
@@ -141,7 +193,11 @@ $ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/package/sql_serv
 [View file details](./services/register_service.sh)
 
 ```bash
-$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/services/register_service.sh | sudo bash -s www.example.com
+$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/services/register_service.sh | sudo bash -s your_arguments
+```
+
+```bash
+$ aiur services/register_service your_arguments
 ```
 
 ### system/set_aspnet_prod
@@ -149,7 +205,11 @@ $ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/services/registe
 [View file details](./system/set_aspnet_prod.sh)
 
 ```bash
-$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/system/set_aspnet_prod.sh | sudo bash -s www.example.com
+$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/system/set_aspnet_prod.sh | sudo bash -s your_arguments
+```
+
+```bash
+$ aiur system/set_aspnet_prod your_arguments
 ```
 
 ### text/edit_json
@@ -157,6 +217,10 @@ $ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/system/set_aspne
 [View file details](./text/edit_json.sh)
 
 ```bash
-$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/text/edit_json.sh | sudo bash -s www.example.com
+$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/text/edit_json.sh | sudo bash -s your_arguments
+```
+
+```bash
+$ aiur text/edit_json your_arguments
 ```
 
