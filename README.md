@@ -59,6 +59,15 @@ $ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/firewall/open_po
 $ aiur firewall/open_port your_arguments
 ```
 
+### git/clone_to
+
+[View file details](./git/clone_to.sh)
+
+```bash
+$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/git/clone_to.sh | sudo bash -s your_arguments
+$ aiur git/clone_to your_arguments
+```
+
 ### install/caddy
 
 [View file details](./install/caddy.sh)
