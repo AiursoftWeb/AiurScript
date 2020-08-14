@@ -131,13 +131,13 @@ $ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/network/get_port
 $ aiur network/get_port your_arguments
 ```
 
-### services/register_service
+### services/register_aspnet_service
 
-[View file details](./services/register_service.sh)
+[View file details](./services/register_aspnet_service.sh)
 
 ```bash
-$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/services/register_service.sh | sudo bash -s your_arguments
-$ aiur services/register_service your_arguments
+$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/services/register_aspnet_service.sh | sudo bash -s your_arguments
+$ aiur services/register_aspnet_service your_arguments
 ```
 
 ### system/set_aspnet_prod
