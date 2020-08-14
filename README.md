@@ -59,6 +59,42 @@ $ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/firewall/open_po
 $ aiur firewall/open_port your_arguments
 ```
 
+### install/caddy
+
+[View file details](./install/caddy.sh)
+
+```bash
+$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/install/caddy.sh | sudo bash -s your_arguments
+$ aiur install/caddy your_arguments
+```
+
+### install/dotnet
+
+[View file details](./install/dotnet.sh)
+
+```bash
+$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/install/dotnet.sh | sudo bash -s your_arguments
+$ aiur install/dotnet your_arguments
+```
+
+### install/node
+
+[View file details](./install/node.sh)
+
+```bash
+$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/install/node.sh | sudo bash -s your_arguments
+$ aiur install/node your_arguments
+```
+
+### install/sql_server
+
+[View file details](./install/sql_server.sh)
+
+```bash
+$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/install/sql_server.sh | sudo bash -s your_arguments
+$ aiur install/sql_server your_arguments
+```
+
 ### mssql/config_password
 
 [View file details](./mssql/config_password.sh)
@@ -93,42 +129,6 @@ $ aiur network/enable_bbr your_arguments
 ```bash
 $ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/network/get_port.sh | sudo bash -s your_arguments
 $ aiur network/get_port your_arguments
-```
-
-### package/caddy
-
-[View file details](./package/caddy.sh)
-
-```bash
-$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/package/caddy.sh | sudo bash -s your_arguments
-$ aiur package/caddy your_arguments
-```
-
-### package/dotnet
-
-[View file details](./package/dotnet.sh)
-
-```bash
-$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/package/dotnet.sh | sudo bash -s your_arguments
-$ aiur package/dotnet your_arguments
-```
-
-### package/node
-
-[View file details](./package/node.sh)
-
-```bash
-$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/package/node.sh | sudo bash -s your_arguments
-$ aiur package/node your_arguments
-```
-
-### package/sql_server
-
-[View file details](./package/sql_server.sh)
-
-```bash
-$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/package/sql_server.sh | sudo bash -s your_arguments
-$ aiur package/sql_server your_arguments
 ```
 
 ### services/register_service
