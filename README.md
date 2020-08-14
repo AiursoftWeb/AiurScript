@@ -59,15 +59,6 @@ $ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/firewall/open_po
 $ aiur firewall/open_port your_arguments
 ```
 
-### import_function
-
-[View file details](./import_function.sh)
-
-```bash
-$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/import_function.sh | sudo bash -s your_arguments
-$ aiur import_function your_arguments
-```
-
 ### mssql/config_password
 
 [View file details](./mssql/config_password.sh)

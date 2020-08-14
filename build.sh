@@ -33,7 +33,7 @@ echo '```bash' >> ./README.md
 echo '$ my_port=$(aiur Network/get_port)' >> ./README.md
 echo '```' >> ./README.md
 
-find . -name "*.sh" | grep -v build.sh | while read line 
+find . -name "*.sh" | grep -v build.sh | grep -v import_function | while read line 
 do
     file=${line/.\//}
     echo $file
