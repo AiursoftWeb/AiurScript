@@ -15,6 +15,23 @@ echo '## How to use' >> ./README.md
 echo '' >> ./README.md
 echo 'Executing the following command to trigger the functions in this repo.' >> ./README.md
 echo '' >> ./README.md
+echo 'Or you can use our one-line script import. Put the following line to the start of your script.' >> ./README.md
+echo '' >> ./README.md
+echo '```bash' >> ./README.md
+echo "$(sed -n 2p ./import_function.sh)" >> ./README.md
+echo '```' >> ./README.md
+echo '' >> ./README.md
+echo 'Add to call a function, simply write: `aiur func_path/func_name arguments`.' >> ./README.md
+echo '' >> ./README.md
+echo '### Examples' >> ./README.md
+echo '' >> ./README.md
+echo '```bash' >> ./README.md
+echo '$ aiur Caddy/add_proxy arg1 arg2' >> ./README.md
+echo '```' >> ./README.md
+echo '' >> ./README.md
+echo '```bash' >> ./README.md
+echo '$ my_port=$(aiur Network/get_port)' >> ./README.md
+echo '```' >> ./README.md
 
 find . -name "*.sh" | grep -v build_readme | while read line 
 do

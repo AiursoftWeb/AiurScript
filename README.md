@@ -15,6 +15,23 @@ Simpliy run the file: `./build_readme.sh`
 
 Executing the following command to trigger the functions in this repo.
 
+Or you can use our one-line script import. Put the following line to the start of your script.
+
+```bash
+aiur() { arg="$( cut -d ' ' -f 2- <<< "$@" )" && curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/$1.sh | sudo bash -s $arg; }
+```
+
+Add to call a function, simply write: `aiur func_path/func_name arguments`.
+
+### Examples
+
+```bash
+$ aiur Caddy/add_proxy arg1 arg2
+```
+
+```bash
+$ my_port=$(aiur Network/get_port)
+```
 ### Caddy/add proxy
 
 [View file details](./Caddy/add_proxy.sh)
@@ -37,6 +54,14 @@ $ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/Firewall/enable_
 
 ```bash
 $ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/Firewall/open_port.sh | sudo bash -s www.example.com
+```
+
+### import function
+
+[View file details](./import_function.sh)
+
+```bash
+$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/import_function.sh | sudo bash -s www.example.com
 ```
 
 ### Install/caddy
