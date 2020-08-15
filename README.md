@@ -86,6 +86,14 @@ $ aiur install/caddy your_arguments
 $ aiur install/dotnet your_arguments
 ```
 
+### install/jq
+
+[View file details](./install/jq.sh)
+
+```bash
+$ aiur install/jq your_arguments
+```
+
 ### install/node
 
 [View file details](./install/node.sh)
