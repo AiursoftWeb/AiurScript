@@ -46,6 +46,14 @@ $ aiur caddy/add_file your_arguments
 $ aiur caddy/add_proxy your_arguments
 ```
 
+### dotnet/publish
+
+[View file details](./dotnet/publish.sh)
+
+```bash
+$ aiur dotnet/publish your_arguments
+```
+
 ### firewall/enable_firewall
 
 [View file details](./firewall/enable_firewall.sh)
