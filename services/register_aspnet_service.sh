@@ -16,6 +16,7 @@ register_service()
     Restart=always
     RestartSec=10
     KillSignal=SIGINT
+    Environment=\"ASPNETCORE_ENVIRONMENT=Production\"
 
     [Install]
     WantedBy=multi-user.target" > /etc/systemd/system/$service_name.service
