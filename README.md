@@ -134,6 +134,14 @@ $ aiur mssql/config_password your_arguments
 $ aiur mssql/create_db your_arguments
 ```
 
+### mssql/run_sql
+
+[View file details](./mssql/run_sql.sh)
+
+```bash
+$ aiur mssql/run_sql your_arguments
+```
+
 ### network/enable_bbr
 
 [View file details](./network/enable_bbr.sh)
