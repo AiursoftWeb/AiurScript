@@ -8,7 +8,7 @@ seedDb()
     aiur text/edit_json "ConnectionStrings.DatabaseConnection" "$connectionString" $path/appsettings.Production.json
     aiur text/edit_json "ConnectionStrings.DatabaseConnection" "$connectionString" $path/appsettings.json
     dotnet add $path package Microsoft.EntityFrameworkCore.Design
-    dotnet ef database update --project $path
+    ~/.dotnet/tools/dotnet-ef database update --project $path
 }
 
 seedDb "$@"
