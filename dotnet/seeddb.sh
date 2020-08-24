@@ -1,3 +1,5 @@
+aiur() { arg="$( cut -d ' ' -f 2- <<< "$@" )" && curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/$1.sh | sudo bash -s $arg; }
+
 seedDb()
 {
     path="$1"
