@@ -7,8 +7,8 @@ seedDb()
     cp -n $path/appsettings.json $path/appsettings.Production.json
     aiur text/edit_json "ConnectionStrings.DatabaseConnection" "$connectionString" $path/appsettings.Production.json
     aiur text/edit_json "ConnectionStrings.DatabaseConnection" "$connectionString" $path/appsettings.json
-    dotnet ef database update --project $path
     dotnet add $path package Microsoft.EntityFrameworkCore.Design
+    dotnet ef database update --project $path
 }
 
 seedDb "$@"
