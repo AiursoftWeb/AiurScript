@@ -54,6 +54,14 @@ $ aiur caddy/add_proxy your_arguments
 $ aiur dotnet/publish your_arguments
 ```
 
+### dotnet/seeddb
+
+[View file details](./dotnet/seeddb.sh)
+
+```bash
+$ aiur dotnet/seeddb your_arguments
+```
+
 ### firewall/enable_firewall
 
 [View file details](./firewall/enable_firewall.sh)
