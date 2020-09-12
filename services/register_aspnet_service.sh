@@ -18,6 +18,7 @@ register_service()
     KillSignal=SIGINT
     Environment=\"ASPNETCORE_ENVIRONMENT=Production\"
     Environment=\"DOTNET_PRINT_TELEMETRY_MESSAGE=false\"
+    Environment=\"ASPNETCORE_FORWARDEDHEADERS_ENABLED=true\"
 
     [Install]
     WantedBy=multi-user.target" > /etc/systemd/system/$service_name.service
