@@ -18,6 +18,7 @@ register_service()
     KillSignal=SIGINT
     Environment=\"ASPNETCORE_ENVIRONMENT=Production\"
     Environment=\"DOTNET_PRINT_TELEMETRY_MESSAGE=false\"
+    Environment=\"DOTNET_CLI_TELEMETRY_OPTOUT=1\"
     Environment=\"ASPNETCORE_FORWARDEDHEADERS_ENABLED=true\"
 
     [Install]
