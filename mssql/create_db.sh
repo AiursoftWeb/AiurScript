@@ -15,8 +15,8 @@ create_db()
         return 9;
     fi;
 
-    echo 'Creating database $dbName...'
-    echo 'Create Database $dbName' > /tmp/initDb.sql
+    echo "Creating database $dbName..."
+    echo "Create Database $dbName" > /tmp/initDb.sql
     /opt/mssql-tools/bin/sqlcmd -U sa -P $dbPassword -S 127.0.0.1 -i /tmp/initDb.sql
     rm /tmp/initDb.sql
 }
