@@ -7,6 +7,7 @@ export ASPNETCORE_ENVIRONMENT="Production"
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
 export ASPNETCORE_FORWARDEDHEADERS_ENABLED="true"
 
+apt install -y apt-transport-https
 wget https://packages.microsoft.com/config/ubuntu/$(lsb_release -r -s)/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 dpkg -i packages-microsoft-prod.deb && rm ./packages-microsoft-prod.deb
 apt-get update
