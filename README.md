@@ -94,6 +94,14 @@ $ aiur git/clone_to your_arguments
 $ aiur install/caddy your_arguments
 ```
 
+### install/docker
+
+[View file details](./install/docker.sh)
+
+```bash
+$ aiur install/docker your_arguments
+```
+
 ### install/dotnet
 
 [View file details](./install/dotnet.sh)
@@ -110,12 +118,28 @@ $ aiur install/dotnet your_arguments
 $ aiur install/jq your_arguments
 ```
 
+### install/kubectl
+
+[View file details](./install/kubectl.sh)
+
+```bash
+$ aiur install/kubectl your_arguments
+```
+
 ### install/node
 
 [View file details](./install/node.sh)
 
 ```bash
 $ aiur install/node your_arguments
+```
+
+### install/python
+
+[View file details](./install/python.sh)
+
+```bash
+$ aiur install/python your_arguments
 ```
 
 ### install/sql_server
