@@ -46,6 +46,14 @@ $ aiur caddy/add_file your_arguments
 $ aiur caddy/add_proxy your_arguments
 ```
 
+### console/success
+
+[View file details](./console/success.sh)
+
+```bash
+$ aiur console/success your_arguments
+```
+
 ### dotnet/publish
 
 [View file details](./dotnet/publish.sh)
@@ -196,14 +204,6 @@ $ aiur network/get_port your_arguments
 
 ```bash
 $ aiur services/register_aspnet_service your_arguments
-```
-
-### system/set_aspnet_prod
-
-[View file details](./system/set_aspnet_prod.sh)
-
-```bash
-$ aiur system/set_aspnet_prod your_arguments
 ```
 
 ### text/edit_json
