@@ -11,7 +11,7 @@ register_service()
 
     [Service]
     Type=simple
-    ExecStart=/usr/bin/dotnet $run_path/$dll.dll --urls=http://localhost:$local_port/
+    ExecStart=/usr/bin/dotnet $run_path/$dll.dll --urls=http://0.0.0.0:$local_port/
     WorkingDirectory=$run_path
     Restart=always
     RestartSec=10
