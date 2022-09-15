@@ -198,6 +198,14 @@ $ aiur network/enable_bbr your_arguments
 $ aiur network/get_port your_arguments
 ```
 
+### network/set_host
+
+[View file details](./network/set_host.sh)
+
+```bash
+$ aiur network/set_host your_arguments
+```
+
 ### services/register_aspnet_service
 
 [View file details](./services/register_aspnet_service.sh)
