@@ -4,6 +4,7 @@ DEBIAN_FRONTEND=noninteractive apt install iperf3 -y
 echo "IP is:"
 curl https://ifconfig.me
 
+rm /etc/systemd/system/iperf3.service
 echo '
 [Unit]
 Description=iperf3 server
