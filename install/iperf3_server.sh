@@ -4,6 +4,8 @@ DEBIAN_FRONTEND=noninteractive apt install iperf3 -y
 echo "IP is:"
 curl https://ifconfig.me
 
+systemctl stop iperf3.service
+systemctl disable iperf3.service
 rm /etc/systemd/system/iperf3.service
 echo '
 [Unit]
