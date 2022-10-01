@@ -118,6 +118,14 @@ $ aiur install/docker your_arguments
 $ aiur install/dotnet your_arguments
 ```
 
+### install/frp_server
+
+[View file details](./install/frp_server.sh)
+
+```bash
+$ aiur install/frp_server your_arguments
+```
+
 ### install/iperf3_server
 
 [View file details](./install/iperf3_server.sh)
