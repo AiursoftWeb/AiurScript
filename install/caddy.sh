@@ -33,6 +33,13 @@ systemctl daemon-reload
 
 # Create caddy config
 touch /etc/caddy/Caddyfile
+echo '{
+        servers {
+                listener_wrappers {
+                }
+        }
+}
+' > /etc/caddy/Caddyfile
 
 # Start caddy
 systemctl enable caddy.service
