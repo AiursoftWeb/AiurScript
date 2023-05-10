@@ -34,9 +34,8 @@ systemctl daemon-reload
 # Create caddy config
 touch /etc/caddy/Caddyfile
 echo '{
+        auto_https disable_redirects
         servers {
-                listener_wrappers {
-                }
         }
 }
 ' > /etc/caddy/Caddyfile
