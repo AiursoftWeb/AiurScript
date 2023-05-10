@@ -43,7 +43,6 @@ do
     echo "[View file details]($line)" >> ./README.md
     echo '' >> ./README.md
     echo '```bash' >> ./README.md
-    #echo "$ curl -sL https://github.com/AiursoftWeb/AiurScript/raw/master/$file | sudo bash -s your_arguments" >> ./README.md
     echo "$ aiur $file_no_sh your_arguments" >> ./README.md
     echo '```' >> ./README.md
     echo '' >> ./README.md
