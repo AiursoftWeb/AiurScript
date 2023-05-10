@@ -1,5 +1,4 @@
-# Install caddy.
-cat /etc/apt/sources.list.d/caddy-fury.list | grep -q caddy || echo "deb [trusted=yes] https://apt.fury.io/caddy/ /" | tee -a /etc/apt/sources.list.d/caddy-fury.list
+
 
 # Install xcaddy.
 apt install -y golang-go
@@ -11,8 +10,30 @@ apt install xcaddy
 
 # Build caddy with a plugin.
 xcaddy build --with github.com/mastercactapus/caddy2-proxyprotocol --output /tmp/caddy
-
-# Replace the original caddy
-systemctl stop caddy.service
 cp /tmp/caddy /usr/bin/
-systemctl restart caddy.service
+
+# Test caddy
+caddy version
+
+# Add caddy group
+groupadd --system caddy
+useradd --system \
+    --gid caddy \
+    --create-home \
+    --home-dir /var/lib/caddy \
+    --shell /usr/sbin/nologin \
+    --comment "Caddy web server" \
+    caddy
+
+# Create caddy service
+mkdir -p /etc/caddy
+chown -R root:caddy /etc/caddy
+wget https://raw.githubusercontent.com/caddyserver/dist/master/init/caddy.service -O /etc/systemd/system/caddy.service
+systemctl daemon-reload
+
+# Create caddy config
+touch /etc/caddy/Caddyfile
+
+# Start caddy
+systemctl enable caddy.service
+systemctl start caddy.service
