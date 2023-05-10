@@ -1,3 +1,6 @@
+# Install caddy.
+cat /etc/apt/sources.list.d/caddy-fury.list | grep -q caddy || echo "deb [trusted=yes] https://apt.fury.io/caddy/ /" | tee -a /etc/apt/sources.list.d/caddy-fury.list
+
 # Install xcaddy.
 apt install -y golang-go
 apt install -y debian-keyring debian-archive-keyring apt-transport-https
