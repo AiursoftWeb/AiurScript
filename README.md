@@ -166,6 +166,14 @@ $ aiur install/node your_arguments
 $ aiur install/python your_arguments
 ```
 
+### install/rust
+
+[View file details](./install/rust.sh)
+
+```bash
+$ aiur install/rust your_arguments
+```
+
 ### install/sql_server
 
 [View file details](./install/sql_server.sh)
