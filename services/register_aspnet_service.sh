@@ -16,6 +16,7 @@ register_service()
     Restart=always
     RestartSec=10
     KillSignal=SIGINT
+    Environment=\"ASPNETCORE_URLS=http://0.0.0.0:$local_port\"
     Environment=\"ASPNETCORE_ENVIRONMENT=Production\"
     Environment=\"DOTNET_PRINT_TELEMETRY_MESSAGE=false\"
     Environment=\"DOTNET_CLI_TELEMETRY_OPTOUT=1\"
