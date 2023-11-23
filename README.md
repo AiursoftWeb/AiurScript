@@ -1,7 +1,7 @@
 
 # Aiur Script Project
 
-[![ManHours](https://manhours.aiursoft.cn/gitlab/gitlab.aiursoft.cn/aiursoft/aiurscript)](https://gitlab.aiursoft.cn/aiursoft/aiurscript/-/commits/master?ref_type=heads)
+[![ManHours](https://manhours.aiursoft.cn/gitlab/gitlab.aiursoft.cn/aiursoft/aiurscript.svg)](https://gitlab.aiursoft.cn/aiursoft/aiurscript/-/commits/master?ref_type=heads)
 
 These are some bash script powers Aiursoft projects on Ubuntu.
 
