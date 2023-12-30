@@ -9,9 +9,9 @@ publish()
     
     csprojPath=$(dirname $csproj)
     if [ -d "$csprojPath/wwwroot" ]; then
-        echo "Copying wwwroot files to $output/wwwroot ..."
+        echo "Copying $csprojPath/wwwroot files to $output/wwwroot ..."
         mkdir -p $output/wwwroot > /dev/null 2>&1
-        cp $csprojPath/wwwroot/* $output/wwwroot/ > /dev/null 2>&1
+        cp $csprojPath/wwwroot/* $output/wwwroot/ -r
     fi
 }
 
