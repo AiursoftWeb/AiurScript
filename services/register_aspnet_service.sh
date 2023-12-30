@@ -3,7 +3,9 @@ register_service()
     service_name="$1" # my.service
     local_port="$2" # 12345
     run_path="$3" # .
-    dll="$4" # FuckingProject.dll
+    dll="$4"
+
+    chown www-data:www-data $run_path -R
     echo "[Unit]
     Description=$dll Service
     After=network.target
@@ -11,6 +13,7 @@ register_service()
 
     [Service]
     Type=simple
+    User=www-data
     ExecStart=/usr/bin/dotnet $run_path/$dll.dll --urls=http://0.0.0.0:$local_port/
     WorkingDirectory=$run_path
     Restart=always
