@@ -6,6 +6,9 @@ publish()
     echo "Deleting all dll files under $output ..."
     find $output -name "*.dll" -delete > /dev/null 2>&1
     dotnet publish -c Release --no-self-contained --no-restore -o $output $csproj
+    
+    mkdir -p $output/wwwroot > /dev/null 2>&1
+    cp $csproj/wwwroot/* $output/wwwroot/ > /dev/null 2>&1
 }
 
 publish "$@"
