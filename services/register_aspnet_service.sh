@@ -24,6 +24,7 @@ register_service()
     Environment=\"DOTNET_PRINT_TELEMETRY_MESSAGE=false\"
     Environment=\"DOTNET_CLI_TELEMETRY_OPTOUT=1\"
     Environment=\"ASPNETCORE_FORWARDEDHEADERS_ENABLED=true\"
+    Environment=\"DOTNET_NOLOGO=1\"
 
     [Install]
     WantedBy=multi-user.target" > /etc/systemd/system/$service_name.service
