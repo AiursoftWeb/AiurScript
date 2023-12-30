@@ -4,7 +4,7 @@ clone_to()
     path="$2"
 
     _=$(git --help || apt install git -y)
-    _=$(ls $path && rm $path -rf)
+    _=$(ls $path > /dev/null 2>&1 && rm $path -rf)
     git clone $repo $path
 }
 
