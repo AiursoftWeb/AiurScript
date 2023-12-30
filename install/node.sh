@@ -1,3 +1,9 @@
+# if node already installed, skip:
+if [ -x "$(command -v node)" ]; then
+  echo "node already installed"
+  exit 0
+fi
+
 sudo mkdir -p /etc/apt/keyrings
 curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | sudo gpg --dearmor -o /etc/apt/keyrings/nodesource.gpg --yes
 NODE_MAJOR=21
