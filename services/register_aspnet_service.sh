@@ -29,7 +29,7 @@ register_service()
     WantedBy=multi-user.target" > /etc/systemd/system/$service_name.service
     systemctl enable $service_name.service
     systemctl start $service_name.service
-    systemctl status --no-block $service_name.service
+    systemctl status --no-block --no-pager $service_name.service
 }
 
 register_service "$@"
