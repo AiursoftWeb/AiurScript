@@ -9,4 +9,5 @@ export ASPNETCORE_FORWARDEDHEADERS_ENABLED="true"
 
 apt install -y apt-transport-https
 DOTNET_CLI_TELEMETRY_OPTOUT=1 DOTNET_PRINT_TELEMETRY_MESSAGE="false" apt install -y dotnet7
-dotnet tool update --global dotnet-ef || dotnet tool install --global dotnet-ef
+
+#dotnet tool update --global dotnet-ef || dotnet tool install --global dotnet-ef
