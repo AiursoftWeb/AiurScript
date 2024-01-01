@@ -5,6 +5,7 @@ publish()
 
     #output might be `/opt/app/service-name`
     serviceName=$(basename $output)
+    echo "Stopping $serviceName.service ..."
     systemctl stop $serviceName.service > /dev/null 2>&1
 
     ls | grep -q obj || dotnet restore $csproj -r linux-x64
