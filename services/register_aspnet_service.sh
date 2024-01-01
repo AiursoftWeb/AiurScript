@@ -28,7 +28,9 @@ register_service()
 
     [Install]
     WantedBy=multi-user.target" > /etc/systemd/system/$service_name.service
+    systemctl daemon-reload
     systemctl enable $service_name.service
+    systemctl stop $service_name.service
     systemctl start $service_name.service
     systemctl status --no-block --no-pager $service_name.service
 }
