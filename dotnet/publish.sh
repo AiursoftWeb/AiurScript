@@ -2,6 +2,11 @@ publish()
 {
     csproj="$1"
     output="$2"
+
+    #output might be `/opt/app/service-name`
+    serviceName=$(basename $output)
+    systemctl stop $serviceName.service > /dev/null 2>&1
+
     ls | grep -q obj || dotnet restore $csproj -r linux-x64
     echo "Deleting all dll files under $output ..."
     find $output -name "*.dll" -delete > /dev/null 2>&1
