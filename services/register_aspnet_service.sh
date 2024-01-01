@@ -6,7 +6,7 @@ register_service()
     dll="$4"
 
     mkdir /var/www -p
-    mkdir /var/www/.local -p
+    mkdir /var/www/.local/share -p
     chown www-data:www-data /var/www -R
     chown www-data:www-data $run_path -R
     mv /etc/systemd/system/$service_name.service /tmp/$service_name.service.bak 2>/dev/null
