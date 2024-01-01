@@ -5,6 +5,8 @@ register_service()
     run_path="$3" # .
     dll="$4"
 
+    mkdir /var/www -p
+    chown www-data:www-data /var/www -R
     chown www-data:www-data $run_path -R
     mv /etc/systemd/system/$service_name.service /tmp/$service_name.service.bak 2>/dev/null
     echo "[Unit]
