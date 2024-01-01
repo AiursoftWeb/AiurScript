@@ -6,6 +6,7 @@ register_service()
     dll="$4"
 
     chown www-data:www-data $run_path -R
+    mv /etc/systemd/system/$service_name.service /tmp/$service_name.service.bak 2>/dev/null
     echo "[Unit]
     Description=$dll Service
     After=network.target
