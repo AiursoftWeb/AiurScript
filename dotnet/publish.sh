@@ -19,6 +19,11 @@ publish()
         mkdir -p $output/wwwroot > /dev/null 2>&1
         cp $csprojPath/wwwroot/* $output/wwwroot/ -r
     fi
+
+    if [ -f "$output/appsettings.json" ]; then
+        echo "Copying $output/appsettings.json to $output/appsettings.Production.json ..."
+        cp $output/appsettings.json $output/appsettings.Production.json
+    fi
 }
 
 publish "$@"
