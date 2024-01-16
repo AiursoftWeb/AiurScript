@@ -21,6 +21,7 @@ publish()
     fi
 
     if [ -f "$output/appsettings.json" ]; then
+        echo "No appsettings.Production.json found, copying $output/appsettings.json to $output/appsettings.Production.json ..."
         echo "Copying $output/appsettings.json to $output/appsettings.Production.json ..."
         cp $output/appsettings.json $output/appsettings.Production.json
     fi
