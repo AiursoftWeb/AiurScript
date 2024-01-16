@@ -20,7 +20,8 @@ publish()
         cp $csprojPath/wwwroot/* $output/wwwroot/ -r
     fi
 
-    if [ -f "$output/appsettings.Production.json" ]; then
+    # If production json not found, but default json found, copy default json to production json.
+    if [ ! -f "$output/appsettings.Production.json" ] && [ -f "$output/appsettings.json" ]; then
         echo "No appsettings.Production.json found, copying $output/appsettings.json to $output/appsettings.Production.json ..."
         echo "Copying $output/appsettings.json to $output/appsettings.Production.json ..."
         cp $output/appsettings.json $output/appsettings.Production.json
