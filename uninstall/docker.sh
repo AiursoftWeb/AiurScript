@@ -11,5 +11,6 @@ systemctl stop docker.socket
 systemctl disable docker.service
 systemctl disable docker.socket
 find /etc/systemd/ -name docker* | xargs -L1 rm
+sudo rm /etc/init.d/docker
 systemctl daemon-reload
 systemctl list-units --all | grep docker

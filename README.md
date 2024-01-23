@@ -1,8 +1,6 @@
 
 # Aiur Script Project
 
-[![ManHours](https://manhours.aiursoft.cn/r/gitlab.aiursoft.cn/aiursoft/aiurscript.svg)](https://gitlab.aiursoft.cn/aiursoft/aiurscript/-/commits/master?ref_type=heads)
-
 These are some bash script powers Aiursoft projects on Ubuntu.
 
 ## Before starting
@@ -246,5 +244,13 @@ $ aiur services/register_aspnet_service your_arguments
 
 ```bash
 $ aiur text/edit_json your_arguments
+```
+
+### uninstall/docker
+
+[View file details](./uninstall/docker.sh)
+
+```bash
+$ aiur uninstall/docker your_arguments
 ```
 
