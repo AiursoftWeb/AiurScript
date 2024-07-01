@@ -30,20 +30,12 @@ $ aiur Caddy/add_proxy arg1 arg2
 ```bash
 $ my_port=$(aiur Network/get_port)
 ```
-### caddy/add_file
+### uninstall/docker
 
-[View file details](./caddy/add_file.sh)
-
-```bash
-$ aiur caddy/add_file your_arguments
-```
-
-### caddy/add_proxy
-
-[View file details](./caddy/add_proxy.sh)
+[View file details](./uninstall/docker.sh)
 
 ```bash
-$ aiur caddy/add_proxy your_arguments
+$ aiur uninstall/docker your_arguments
 ```
 
 ### console/success
@@ -52,6 +44,38 @@ $ aiur caddy/add_proxy your_arguments
 
 ```bash
 $ aiur console/success your_arguments
+```
+
+### mssql/config_password
+
+[View file details](./mssql/config_password.sh)
+
+```bash
+$ aiur mssql/config_password your_arguments
+```
+
+### mssql/run_sql
+
+[View file details](./mssql/run_sql.sh)
+
+```bash
+$ aiur mssql/run_sql your_arguments
+```
+
+### mssql/create_db
+
+[View file details](./mssql/create_db.sh)
+
+```bash
+$ aiur mssql/create_db your_arguments
+```
+
+### git/clone_to
+
+[View file details](./git/clone_to.sh)
+
+```bash
+$ aiur git/clone_to your_arguments
 ```
 
 ### dotnet/publish
@@ -70,140 +94,36 @@ $ aiur dotnet/publish your_arguments
 $ aiur dotnet/seeddb your_arguments
 ```
 
-### firewall/enable_firewall
+### caddy/add_file
 
-[View file details](./firewall/enable_firewall.sh)
+[View file details](./caddy/add_file.sh)
 
 ```bash
-$ aiur firewall/enable_firewall your_arguments
+$ aiur caddy/add_file your_arguments
 ```
 
-### firewall/open_port
+### caddy/add_proxy
 
-[View file details](./firewall/open_port.sh)
+[View file details](./caddy/add_proxy.sh)
 
 ```bash
-$ aiur firewall/open_port your_arguments
+$ aiur caddy/add_proxy your_arguments
 ```
 
-### git/clone_to
+### text/edit_json
 
-[View file details](./git/clone_to.sh)
+[View file details](./text/edit_json.sh)
 
 ```bash
-$ aiur git/clone_to your_arguments
+$ aiur text/edit_json your_arguments
 ```
 
-### install/caddy
+### services/register_aspnet_service
 
-[View file details](./install/caddy.sh)
-
-```bash
-$ aiur install/caddy your_arguments
-```
-
-### install/docker
-
-[View file details](./install/docker.sh)
+[View file details](./services/register_aspnet_service.sh)
 
 ```bash
-$ aiur install/docker your_arguments
-```
-
-### install/dotnet
-
-[View file details](./install/dotnet.sh)
-
-```bash
-$ aiur install/dotnet your_arguments
-```
-
-### install/frp_server
-
-[View file details](./install/frp_server.sh)
-
-```bash
-$ aiur install/frp_server your_arguments
-```
-
-### install/iperf3_server
-
-[View file details](./install/iperf3_server.sh)
-
-```bash
-$ aiur install/iperf3_server your_arguments
-```
-
-### install/jq
-
-[View file details](./install/jq.sh)
-
-```bash
-$ aiur install/jq your_arguments
-```
-
-### install/kubectl
-
-[View file details](./install/kubectl.sh)
-
-```bash
-$ aiur install/kubectl your_arguments
-```
-
-### install/node
-
-[View file details](./install/node.sh)
-
-```bash
-$ aiur install/node your_arguments
-```
-
-### install/python
-
-[View file details](./install/python.sh)
-
-```bash
-$ aiur install/python your_arguments
-```
-
-### install/rust
-
-[View file details](./install/rust.sh)
-
-```bash
-$ aiur install/rust your_arguments
-```
-
-### install/sql_server
-
-[View file details](./install/sql_server.sh)
-
-```bash
-$ aiur install/sql_server your_arguments
-```
-
-### mssql/config_password
-
-[View file details](./mssql/config_password.sh)
-
-```bash
-$ aiur mssql/config_password your_arguments
-```
-
-### mssql/create_db
-
-[View file details](./mssql/create_db.sh)
-
-```bash
-$ aiur mssql/create_db your_arguments
-```
-
-### mssql/run_sql
-
-[View file details](./mssql/run_sql.sh)
-
-```bash
-$ aiur mssql/run_sql your_arguments
+$ aiur services/register_aspnet_service your_arguments
 ```
 
 ### network/enable_bbr
@@ -230,27 +150,107 @@ $ aiur network/get_port your_arguments
 $ aiur network/set_host your_arguments
 ```
 
-### services/register_aspnet_service
+### firewall/enable_firewall
 
-[View file details](./services/register_aspnet_service.sh)
+[View file details](./firewall/enable_firewall.sh)
 
 ```bash
-$ aiur services/register_aspnet_service your_arguments
+$ aiur firewall/enable_firewall your_arguments
 ```
 
-### text/edit_json
+### firewall/open_port
 
-[View file details](./text/edit_json.sh)
+[View file details](./firewall/open_port.sh)
 
 ```bash
-$ aiur text/edit_json your_arguments
+$ aiur firewall/open_port your_arguments
 ```
 
-### uninstall/docker
+### install/frp_server
 
-[View file details](./uninstall/docker.sh)
+[View file details](./install/frp_server.sh)
 
 ```bash
-$ aiur uninstall/docker your_arguments
+$ aiur install/frp_server your_arguments
+```
+
+### install/sql_server
+
+[View file details](./install/sql_server.sh)
+
+```bash
+$ aiur install/sql_server your_arguments
+```
+
+### install/docker
+
+[View file details](./install/docker.sh)
+
+```bash
+$ aiur install/docker your_arguments
+```
+
+### install/python
+
+[View file details](./install/python.sh)
+
+```bash
+$ aiur install/python your_arguments
+```
+
+### install/jq
+
+[View file details](./install/jq.sh)
+
+```bash
+$ aiur install/jq your_arguments
+```
+
+### install/node
+
+[View file details](./install/node.sh)
+
+```bash
+$ aiur install/node your_arguments
+```
+
+### install/dotnet
+
+[View file details](./install/dotnet.sh)
+
+```bash
+$ aiur install/dotnet your_arguments
+```
+
+### install/iperf3_server
+
+[View file details](./install/iperf3_server.sh)
+
+```bash
+$ aiur install/iperf3_server your_arguments
+```
+
+### install/kubectl
+
+[View file details](./install/kubectl.sh)
+
+```bash
+$ aiur install/kubectl your_arguments
+```
+
+### install/caddy
+
+[View file details](./install/caddy.sh)
+
+```bash
+$ aiur install/caddy your_arguments
+```
+
+### install/rust
+
+[View file details](./install/rust.sh)
+
+```bash
+$ aiur install/rust your_arguments
 ```
 

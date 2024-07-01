@@ -4,11 +4,18 @@ register_service()
     local_port="$2" # 12345
     run_path="$3" # .
     dll="$4"
+    as_root="$5"
 
     mkdir /var/www -p
     mkdir /var/www/.local/share -p
-    chown www-data:www-data /var/www -R
-    chown www-data:www-data $run_path -R
+    if [ "$as_root" = true ]; then
+        user="root"
+    else
+        user="www-data"
+        chown www-data:www-data /var/www -R
+        chown www-data:www-data $run_path -R
+    fi
+
     mv /etc/systemd/system/$service_name.service /tmp/$service_name.service.bak 2>/dev/null
     echo "[Unit]
     Description=$dll Service
@@ -17,7 +24,7 @@ register_service()
 
     [Service]
     Type=simple
-    User=www-data
+    User=$user
     ExecStart=/usr/bin/dotnet $run_path/$dll --urls=http://0.0.0.0:$local_port/
     WorkingDirectory=$run_path
     Restart=always
