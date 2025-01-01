@@ -10,6 +10,6 @@ export ASPNETCORE_FORWARDEDHEADERS_ENABLED="true"
 export DOTNET_NOLOGO="1"
 
 apt install -y apt-transport-https
-DOTNET_CLI_TELEMETRY_OPTOUT=1 DOTNET_PRINT_TELEMETRY_MESSAGE="false" DOTNET_NOLOGO="1" apt install -y dotnet8
+DOTNET_CLI_TELEMETRY_OPTOUT=1 DOTNET_PRINT_TELEMETRY_MESSAGE="false" DOTNET_NOLOGO="1" apt install -y dotnet8 dotnet9
 
 #dotnet tool update --global dotnet-ef || dotnet tool install --global dotnet-ef
