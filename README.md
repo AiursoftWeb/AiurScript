@@ -16,7 +16,7 @@ Simpliy run the file: `./build.sh`
 You can install via the one-line install script. Put the following line to the start of your script.
 
 ```bash
-aiur() { arg="$( cut -d ' ' -f 2- <<< "$@" )" && curl -sL https://gitlab.aiursoft.cn/aiursoft/aiurscript/-/raw/master/$1.sh | sudo bash -s $arg; }
+aiur() { arg="$( cut -d ' ' -f 2- <<< "$@" )" && curl -sL https://gitlab.aiursoft.com/aiursoft/aiurscript/-/raw/master/$1.sh | sudo bash -s $arg; }
 ```
 
 Add to call a function, simply write: `aiur func_path/func_name arguments`.
