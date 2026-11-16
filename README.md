@@ -42,7 +42,9 @@ $ my_port=$(aiur network/get_port)
 
 The catalog below uses the actual lowercase paths. `your_arguments` is a placeholder: open the linked implementation to determine its required positional parameters.
 
-### caddy/add_file
+### Script catalog
+
+#### caddy/add_file
 
 [View file details](./caddy/add_file.sh)
 
@@ -50,7 +52,7 @@ The catalog below uses the actual lowercase paths. `your_arguments` is a placeho
 $ aiur caddy/add_file your_arguments
 ```
 
-### caddy/add_proxy
+#### caddy/add_proxy
 
 [View file details](./caddy/add_proxy.sh)
 
@@ -58,7 +60,7 @@ $ aiur caddy/add_file your_arguments
 $ aiur caddy/add_proxy your_arguments
 ```
 
-### console/success
+#### console/success
 
 [View file details](./console/success.sh)
 
@@ -66,7 +68,7 @@ $ aiur caddy/add_proxy your_arguments
 $ aiur console/success your_arguments
 ```
 
-### dotnet/publish
+#### dotnet/publish
 
 [View file details](./dotnet/publish.sh)
 
@@ -74,7 +76,7 @@ $ aiur console/success your_arguments
 $ aiur dotnet/publish your_arguments
 ```
 
-### dotnet/seeddb
+#### dotnet/seeddb
 
 [View file details](./dotnet/seeddb.sh)
 
@@ -82,7 +84,7 @@ $ aiur dotnet/publish your_arguments
 $ aiur dotnet/seeddb your_arguments
 ```
 
-### firewall/enable_firewall
+#### firewall/enable_firewall
 
 [View file details](./firewall/enable_firewall.sh)
 
@@ -90,7 +92,7 @@ $ aiur dotnet/seeddb your_arguments
 $ aiur firewall/enable_firewall your_arguments
 ```
 
-### firewall/open_port
+#### firewall/open_port
 
 [View file details](./firewall/open_port.sh)
 
@@ -98,7 +100,7 @@ $ aiur firewall/enable_firewall your_arguments
 $ aiur firewall/open_port your_arguments
 ```
 
-### git/clone_to
+#### git/clone_to
 
 [View file details](./git/clone_to.sh)
 
@@ -106,7 +108,7 @@ $ aiur firewall/open_port your_arguments
 $ aiur git/clone_to your_arguments
 ```
 
-### install/caddy
+#### install/caddy
 
 [View file details](./install/caddy.sh)
 
@@ -114,7 +116,7 @@ $ aiur git/clone_to your_arguments
 $ aiur install/caddy your_arguments
 ```
 
-### install/docker
+#### install/docker
 
 [View file details](./install/docker.sh)
 
@@ -122,7 +124,7 @@ $ aiur install/caddy your_arguments
 $ aiur install/docker your_arguments
 ```
 
-### install/dotnet
+#### install/dotnet
 
 [View file details](./install/dotnet.sh)
 
@@ -130,7 +132,7 @@ $ aiur install/docker your_arguments
 $ aiur install/dotnet your_arguments
 ```
 
-### install/frp_server
+#### install/frp_server
 
 [View file details](./install/frp_server.sh)
 
@@ -138,7 +140,7 @@ $ aiur install/dotnet your_arguments
 $ aiur install/frp_server your_arguments
 ```
 
-### install/iperf3_server
+#### install/iperf3_server
 
 [View file details](./install/iperf3_server.sh)
 
@@ -146,7 +148,7 @@ $ aiur install/frp_server your_arguments
 $ aiur install/iperf3_server your_arguments
 ```
 
-### install/jq
+#### install/jq
 
 [View file details](./install/jq.sh)
 
@@ -154,7 +156,7 @@ $ aiur install/iperf3_server your_arguments
 $ aiur install/jq your_arguments
 ```
 
-### install/kubectl
+#### install/kubectl
 
 [View file details](./install/kubectl.sh)
 
@@ -162,7 +164,7 @@ $ aiur install/jq your_arguments
 $ aiur install/kubectl your_arguments
 ```
 
-### install/node
+#### install/node
 
 [View file details](./install/node.sh)
 
@@ -170,7 +172,7 @@ $ aiur install/kubectl your_arguments
 $ aiur install/node your_arguments
 ```
 
-### install/python
+#### install/python
 
 [View file details](./install/python.sh)
 
@@ -178,7 +180,7 @@ $ aiur install/node your_arguments
 $ aiur install/python your_arguments
 ```
 
-### install/rust
+#### install/rust
 
 [View file details](./install/rust.sh)
 
@@ -186,7 +188,7 @@ $ aiur install/python your_arguments
 $ aiur install/rust your_arguments
 ```
 
-### install/sql_server
+#### install/sql_server
 
 [View file details](./install/sql_server.sh)
 
@@ -194,7 +196,7 @@ $ aiur install/rust your_arguments
 $ aiur install/sql_server your_arguments
 ```
 
-### mssql/config_password
+#### mssql/config_password
 
 [View file details](./mssql/config_password.sh)
 
@@ -202,7 +204,7 @@ $ aiur install/sql_server your_arguments
 $ aiur mssql/config_password your_arguments
 ```
 
-### mssql/create_db
+#### mssql/create_db
 
 [View file details](./mssql/create_db.sh)
 
@@ -210,7 +212,7 @@ $ aiur mssql/config_password your_arguments
 $ aiur mssql/create_db your_arguments
 ```
 
-### mssql/run_sql
+#### mssql/run_sql
 
 [View file details](./mssql/run_sql.sh)
 
@@ -218,7 +220,7 @@ $ aiur mssql/create_db your_arguments
 $ aiur mssql/run_sql your_arguments
 ```
 
-### network/enable_bbr
+#### network/enable_bbr
 
 [View file details](./network/enable_bbr.sh)
 
@@ -226,7 +228,7 @@ $ aiur mssql/run_sql your_arguments
 $ aiur network/enable_bbr your_arguments
 ```
 
-### network/get_port
+#### network/get_port
 
 [View file details](./network/get_port.sh)
 
@@ -234,7 +236,7 @@ $ aiur network/enable_bbr your_arguments
 $ aiur network/get_port your_arguments
 ```
 
-### network/set_host
+#### network/set_host
 
 [View file details](./network/set_host.sh)
 
@@ -242,7 +244,7 @@ $ aiur network/get_port your_arguments
 $ aiur network/set_host your_arguments
 ```
 
-### services/register_aspnet_service
+#### services/register_aspnet_service
 
 [View file details](./services/register_aspnet_service.sh)
 
@@ -250,7 +252,7 @@ $ aiur network/set_host your_arguments
 $ aiur services/register_aspnet_service your_arguments
 ```
 
-### text/edit_json
+#### text/edit_json
 
 [View file details](./text/edit_json.sh)
 
@@ -258,7 +260,7 @@ $ aiur services/register_aspnet_service your_arguments
 $ aiur text/edit_json your_arguments
 ```
 
-### uninstall/docker
+#### uninstall/docker
 
 [View file details](./uninstall/docker.sh)
 

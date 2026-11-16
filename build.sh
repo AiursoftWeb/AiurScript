@@ -48,12 +48,14 @@ $ my_port=$(aiur network/get_port)
 
 The catalog below uses the actual lowercase paths. `your_arguments` is a placeholder: open the linked implementation to determine its required positional parameters.
 
+### Script catalog
+
 README_USAGE
 
 find . -name '*.sh' ! -name 'build.sh' ! -name 'import_function.sh' | LC_ALL=C sort | while IFS= read -r line; do
     file=${line#./}
     name=${file%.sh}
-    printf '### %s\n\n[View file details](%s)\n\n```bash\n$ aiur %s your_arguments\n```\n\n' "$name" "$line" "$name" >> README.md
+    printf '#### %s\n\n[View file details](%s)\n\n```bash\n$ aiur %s your_arguments\n```\n\n' "$name" "$line" "$name" >> README.md
 done
 
 cat >> README.md <<'README_FOOTER'
