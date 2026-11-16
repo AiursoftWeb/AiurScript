@@ -1,50 +1,98 @@
-echo '' > ./README.md
-echo '# Aiur Script Project' >> ./README.md
-echo '' >> ./README.md
-echo 'These are some bash script powers Aiursoft projects on Ubuntu.' >> ./README.md
-echo '' >> ./README.md
-echo '## Before starting' >> ./README.md
-echo '' >> ./README.md
-echo 'You need to have bash installed. For linux, it is installed by default. For Windows, download it [here](https://git-scm.com).' >> ./README.md
-echo '' >> ./README.md
-echo '## How to build' >> ./README.md
-echo '' >> ./README.md
-echo 'Simpliy run the file: `./build.sh`' >> ./README.md
-echo '' >> ./README.md
-echo '## How to use' >> ./README.md
-echo '' >> ./README.md
-echo 'You can install via the one-line install script. Put the following line to the start of your script.' >> ./README.md
-echo '' >> ./README.md
-echo '```bash' >> ./README.md
-echo "$(sed -n 2p ./import_function.sh)" >> ./README.md
-echo '```' >> ./README.md
-echo '' >> ./README.md
-echo 'Add to call a function, simply write: `aiur func_path/func_name arguments`.' >> ./README.md
-echo '' >> ./README.md
-echo '### Examples' >> ./README.md
-echo '' >> ./README.md
-echo '```bash' >> ./README.md
-echo '$ aiur Caddy/add_proxy arg1 arg2' >> ./README.md
-echo '```' >> ./README.md
-echo '' >> ./README.md
-echo '```bash' >> ./README.md
-echo '$ my_port=$(aiur Network/get_port)' >> ./README.md
-echo '```' >> ./README.md
+#!/usr/bin/env bash
+set -euo pipefail
 
-find . -name "*.sh" | grep -v build.sh | grep -v import_function | while read line 
-do
-    file=${line/.\//}
-    echo $file
-    file_no_sh=${file/.sh/}
-    file_des=${file_no_sh/_/ }
+cat > README.md <<'README_HEADER'
+<a name="aiur-script-project"></a>
+# Aiursoft AiurScript
 
-    echo "### $file_no_sh" >> ./README.md
-    echo '' >> ./README.md
-    echo "[View file details]($line)" >> ./README.md
-    echo '' >> ./README.md
-    echo '```bash' >> ./README.md
-    echo "$ aiur $file_no_sh your_arguments" >> ./README.md
-    echo '```' >> ./README.md
-    echo '' >> ./README.md
+These are some bash script powers Aiursoft projects on Ubuntu.
 
+## Overview
+
+### What is AiurScript?
+
+AiurScript is a collection of Ubuntu administration scripts for services, packages, networking, databases and common shell tasks. Each catalog entry links to the script that implements the operation.
+
+## Installation
+
+<a name="before-starting"></a>
+
+Use Bash on Ubuntu, with `curl` and `sudo` for the remote helper. Bash is normally installed on Linux; Windows users can obtain a Bash environment [here](https://git-scm.com), but that does not supply the Ubuntu services and package tools required by the administration scripts.
+
+The helper below downloads the selected script and executes it with `sudo bash`. Inspect the script and its arguments before using it on an intended host. Individual operations may install services or change persistent system configuration.
+
+## Usage
+
+<a name="how-to-use"></a>
+
+You can install via the one-line install script. Put the following line to the start of your script.
+
+```bash
+README_HEADER
+sed -n '2p' import_function.sh >> README.md
+cat >> README.md <<'README_USAGE'
+
+```
+
+Add to call a function, simply write: `aiur func_path/func_name arguments`.
+
+### Examples
+
+```bash
+$ aiur caddy/add_proxy arg1 arg2
+```
+
+```bash
+$ my_port=$(aiur network/get_port)
+```
+
+The catalog below uses the actual lowercase paths. `your_arguments` is a placeholder: open the linked implementation to determine its required positional parameters.
+
+README_USAGE
+
+find . -name '*.sh' ! -name 'build.sh' ! -name 'import_function.sh' | LC_ALL=C sort | while IFS= read -r line; do
+    file=${line#./}
+    name=${file%.sh}
+    printf '### %s\n\n[View file details](%s)\n\n```bash\n$ aiur %s your_arguments\n```\n\n' "$name" "$line" "$name" >> README.md
 done
+
+cat >> README.md <<'README_FOOTER'
+## Configuration
+
+The remote import function is defined in [import_function.sh](import_function.sh). Its first argument selects the case-sensitive repository path without `.sh`; the rest is passed to that script. The existing helper splits arguments as shell words, so do not assume it preserves opaque whitespace-containing arguments.
+
+There is no shared settings file. Script-specific command arguments, files, prerequisites and side effects are defined in the linked implementation. Installers and service/network/database operations have different requirements; Bash availability alone is insufficient.
+
+## Development
+
+<a name="how-to-build"></a>
+
+The existing `build.sh` generates this README from its static template, the actual helper and discovered script paths. It is not an installer or a package compiler. From the repository root, regenerate and review the result:
+
+```bash
+bash build.sh
+```
+
+Check changed scripts without executing them:
+
+```bash
+bash -n build.sh
+bash -n import_function.sh
+```
+
+The repository has no CI configuration or automated behavior test suite. Use an appropriate disposable Ubuntu environment when validating administrative behavior; the documentation generator itself does not install or execute the listed operations. Update the existing generator when changing the public chapter structure so regeneration preserves it.
+
+## How to contribute
+
+There are many ways to contribute to the project: logging bugs, submitting pull requests, reporting issues, and creating suggestions.
+
+Even if you have push rights on the repository, you should create a personal fork and create feature branches there when you need them. This keeps the main repository clean and your workflow cruft out of sight.
+
+We're also interested in your feedback on the future of this project. You can submit a suggestion or feature request through the issue tracker. To make this process more effective, we're asking that these include more information to help define them more clearly.
+
+
+
+## License
+
+Licensed under the [MIT License](LICENSE).
+README_FOOTER
